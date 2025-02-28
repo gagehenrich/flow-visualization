@@ -1,4 +1,6 @@
-title: Gage Henrich's Flow Visualization
-description: My Flow Visualization Projects at the University of Colorado at Boulder 
-plugins:
-  - jekyll-seo-tag
+title: Gage Henrich | Flow Visualization
+description: "let's study fluid flow"
+url: "https://flow-visualization.gagehenrich.github.io"
+
+# Google 
+google_verify: wwrvzFfHqXnUhVCQsUAdaxMivDIZXvotE9oKkv5wLjw
