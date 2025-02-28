@@ -3,10 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    {% if site.google_verify %}
+    <meta name="google-site-verification" content="{{ site.google_verify }}" />
+    {% endif %}
+    <title>{{ site.title }}</title>
+    <link rel="shortcut icon" type="image/png" href="{{ "https://avatars.githubusercontent.com/u/16323793?s=400&u=40f35d67f9f3762f54e035622612e333b16f9972&v=4" }}" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            background-color: #0d1117;
+            color: #e6edf3;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #58a6ff;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #c9d1d9;
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 15px; 
+            border: 3px solid #58a6ff;
+            display: block; 
+        }
+        .links {
+            margin-top: 15px;
+        }
+        .links a {
+            margin: 0 10px;
+        }
+        .repo-list {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 600px;
+        }
+        .repo-list h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .repo-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .repo-list li {
+            margin-bottom: 15px;
+        }
+        .repo-list a {
+            font-size: 1.2rem;
+        }
+        .repo-list p {
+            font-size: 0.9rem;
+            margin: 5px 0 0;
+        }
+        .tech-stack {
+            margin: 20px 0;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .tech-stack i {
+            font-size: 2rem;
+            color: #58a6ff;
+            transition: transform 0.2s;
+        }
+        
+        .tech-stack i:hover {
+            transform: scale(1.2);
+        }
+        
+        .tech-icon {
+            width: 32px;
+            height: 32px;
+            filter: invert(67%) sepia(98%) saturate(1836%) hue-rotate(199deg) brightness(103%) contrast(101%);
+            transition: transform 0.2s;
+        }
+        
+        .tech-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
-    <h1>{{ page.title }}</h1>
     {{ content }}
 </body>
 </html>
