@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /_config.yml
+Disallow: /layouts/
+
+Sitemap: https://flow-visualization.gagehenrich.github.io/sitemap.xml
